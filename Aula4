@@ -1,0 +1,23 @@
+/**
+ * Aula4
+ * Crie um jogo que o usuário digita um número e no final verifica se acertou o numero aleatório
+ */ 
+import java.util.Scanner;
+import java.util.Random;
+
+ public class Aula4 {
+
+    public static void main(String[] args) {
+    Random aleatorio = new Random();   
+    Scanner lendoNumero = new Scanner(System.in);
+    final int sorteio = aleatorio.nextInt(0,10);
+        System.out.println("Digite um valor pra jogar: ");
+        int numeroDousuario = lendoNumero.nextInt();
+        System.out.println("Numero aleatorio: " + sorteio + "     Número digitado: " + numeroDousuario);
+        lendoNumero.close();
+        
+        
+
+
+    }
+}
